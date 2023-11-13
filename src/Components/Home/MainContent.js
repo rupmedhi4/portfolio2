@@ -22,9 +22,9 @@ export default function MainContent() {
     }, []);
 
     return (
-        <div>
+        <div >
             <div className='flex flex-col items-center justify-center h-96 overflow-hidden mt-[3.5rem]'>
-                <h1 className='text-[4rem] font-extrabold text-white scale-in-center'>Welcome </h1>
+                <h1 className='md:text-[4rem] text-[3rem] font-extrabold text-white scale-in-center flex-wrap'>Welcome </h1>
                 <div className='scale-in-center2'>
                     <span className='typing-element text-[3rem] mt-3 font-serif '></span>
                 </div>
@@ -33,6 +33,11 @@ export default function MainContent() {
                  <button className='text-white font-bold text-[1.5rem] border-2 border-blue-500 pl-4 pr-4 pt-1 pb-1 flex justify-center mx-auto text-center puff-in-center'>Contact Me</button>
                  <AiOutlineDownCircle className='flex justify-center mx-auto text-center mt-[5rem] text-3xl bg-transparent border border-blue-400 rounded-full animate-bounce'/>
             </div>  
+
+
+
+
+          
           
 
         </div>

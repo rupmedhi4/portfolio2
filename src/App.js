@@ -1,6 +1,7 @@
 import Home from "./Components/Home/Home";
 import {  useSelector } from "react-redux";
 import Modal from "./Components/Portal/Modal";
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
      {
       menu ? <Modal/> : null
      }
+    
     </>
   );
 }
