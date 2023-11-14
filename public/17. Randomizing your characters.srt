@@ -1,0 +1,191 @@
+1
+00:00:00,330 --> 00:00:06,560
+All right, let's generate a random Star Wars character so you can see here that we have swapped dev
+
+2
+00:00:06,570 --> 00:00:08,520
+slash API slash slash one.
+
+3
+00:00:09,570 --> 00:00:15,060
+And that's just going to get the first character in their database I.D. number one, is the first character
+
+4
+00:00:15,060 --> 00:00:16,860
+in Support Dev's database.
+
+5
+00:00:18,900 --> 00:00:24,900
+What if we go over to their website and we look at people for who is number four?
+
+6
+00:00:27,200 --> 00:00:29,540
+Uh, Darth Vader, nice.
+
+7
+00:00:30,100 --> 00:00:32,380
+Another common character, so that's a good one to use.
+
+8
+00:00:33,250 --> 00:00:38,440
+What if we wanted to get whose number, I don't know, I'm going to guess number 11 or you got to be
+
+9
+00:00:38,440 --> 00:00:38,790
+kidding me.
+
+10
+00:00:38,800 --> 00:00:39,760
+I'm on a roll here.
+
+11
+00:00:39,910 --> 00:00:40,950
+Anakin Skywalker.
+
+12
+00:00:40,960 --> 00:00:41,320
+Nice.
+
+13
+00:00:41,890 --> 00:00:43,510
+So, you know, keeping it in the family.
+
+14
+00:00:44,920 --> 00:00:46,590
+OK, so that's random ish.
+
+15
+00:00:46,600 --> 00:00:49,480
+Let's see what happens when we go to number 100.
+
+16
+00:00:50,200 --> 00:00:51,460
+There isn't a one hundred.
+
+17
+00:00:51,850 --> 00:00:57,730
+And so with a lot of APIs, what we can do is because this is a detail you, Earl, we can simply go
+
+18
+00:00:57,730 --> 00:01:00,220
+to people and this will show us all of the people.
+
+19
+00:01:00,220 --> 00:01:01,630
+It says there's a count of 82.
+
+20
+00:01:02,080 --> 00:01:05,620
+So we know there's at least 82 characters in there with an ID.
+
+21
+00:01:07,350 --> 00:01:13,650
+So now we need a random number between zero or not zero, but a random number between one and 82.
+
+22
+00:01:14,070 --> 00:01:20,460
+So we're going to create a random number const random number is equal to and this is just plain JavaScript
+
+23
+00:01:20,460 --> 00:01:20,610
+here.
+
+24
+00:01:20,610 --> 00:01:23,850
+So we're going to round whatever this number is, math.
+
+25
+00:01:26,550 --> 00:01:27,210
+Random.
+
+26
+00:01:28,030 --> 00:01:33,250
+And this is going to give us a number between zero and one, and then we're going to multiply that by
+
+27
+00:01:33,250 --> 00:01:35,470
+82 and make sure that that's rounded.
+
+28
+00:01:35,740 --> 00:01:41,560
+So if it's like zero point four, one five two three, it's going to multiply that by 82 and then round
+
+29
+00:01:41,560 --> 00:01:42,940
+that to a whole number.
+
+30
+00:01:45,320 --> 00:01:49,730
+Then we can take that number and we can turn this into a template literal instead of a regular string,
+
+31
+00:01:50,090 --> 00:01:53,750
+and we can throw this variable in here again, this is just regular JavaScript at this point.
+
+32
+00:01:55,020 --> 00:02:01,230
+And what this is going to do is get a random number between one and eighty two, and so every time we
+
+33
+00:02:01,230 --> 00:02:06,960
+click this, every time we click this function, this click event is going to create a new random number,
+
+34
+00:02:07,200 --> 00:02:12,140
+create a new random you URL and it's going to fetch that you URL and then set that data for us.
+
+35
+00:02:12,150 --> 00:02:16,320
+And every time that data is set, our page updates automatically.
+
+36
+00:02:17,300 --> 00:02:22,340
+So let's go ahead and take a look at this to refresh random character, one is Ben.
+
+37
+00:02:23,750 --> 00:02:28,010
+And every time I click this, it gets a new character.
+
+38
+00:02:29,470 --> 00:02:34,750
+So now we actually have this up and running now we still have a few things to work with, such as the
+
+39
+00:02:34,750 --> 00:02:36,000
+film's OK.
+
+40
+00:02:36,100 --> 00:02:38,580
+If there's multiple films, let's find one that has multiple films.
+
+41
+00:02:38,590 --> 00:02:39,070
+Here's a good one.
+
+42
+00:02:39,080 --> 00:02:42,130
+See three films in every film that they have in their database.
+
+43
+00:02:42,460 --> 00:02:43,740
+This is one long string.
+
+44
+00:02:43,750 --> 00:02:48,100
+What we want to do is actually show this as maybe a link and turn this into a link as well.
+
+45
+00:02:48,110 --> 00:02:48,760
+So let's go ahead.
+
+46
+00:02:49,000 --> 00:02:52,660
+And first of all, in the next lesson, let's create a link here.
+
+47
+00:02:52,660 --> 00:02:53,760
+I'll show you how to do that.
+
+48
+00:02:54,460 --> 00:02:59,200
+And then in the lesson after that, let's go ahead and turn this into multiple bullet points.

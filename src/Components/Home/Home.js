@@ -6,6 +6,8 @@ import { useDispatch } from 'react-redux';
 import PortalSlice, { openModal } from '../Slices/PortalSlice';
 import AboutMe from '../AboutMe/AboutMe';
 import Resume from '../Resume/Resume';
+import Project from '../Project/Project';
+import ContactMe from '../Contact/ContactMe';
 
 export default function Home() {
 
@@ -17,7 +19,7 @@ export default function Home() {
 
   return (
     <div className='flex flex-row h-screen w-screen'>
-      <div className='hidden md:flex md:w-80 md:bg-black md:max-w-20vw md:text-white p-4'>
+      <div className='hidden md:flex md:w-[20rem] md:bg-black md:max-w-20vw md:text-white'>
         <SideBar />
       </div>
 
@@ -27,6 +29,8 @@ export default function Home() {
           <MainContent />
           <AboutMe/>
           <Resume/>
+          <Project/>
+          <ContactMe/>
         </div>
 
       </div>

@@ -1,4 +1,4 @@
-// AboutMe.jsx
+
 import React from 'react';
 
 export default function AboutMe() {
@@ -15,10 +15,10 @@ export default function AboutMe() {
 
         </div>
 
-        <div className='pl-4 w-[16rem] md:w-[23rem]'>
+        <div className='pl-4 w-[16rem] md:w-[28rem]'>
           <img src="./gif.gif" alt="" className='rounded-full rounded-t-md rounded-tr-full'/>
           <div className='text-center pt-5'>
-              <button className='bg-blue-700 rounded-full text-white  p-4 pl-8 pr-8 font-bold'>Download CV</button>
+              <button className='bg-blue-700 rounded-full text-white mb-4 p-4 pl-8 pr-8 font-bold'>Download CV</button>
           </div>
         </div>
       </div>
