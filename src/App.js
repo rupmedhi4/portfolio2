@@ -4,16 +4,12 @@ import Modal from "./Components/Portal/Modal";
 
 function App() {
   const menu = useSelector((state) => state.PortalSlice.isMenuOpen);
-
-
-
   return (
     <>
      <Home/>
      {
       menu ? <Modal/> : null
-     }
-    
+     } 
     </>
   );
 }
