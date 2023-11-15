@@ -1,5 +1,7 @@
 import React from 'react'
 import ProjectCart from '../ProjectCart'
+import { motion } from 'framer-motion';
+
 
 export default function Project() {
     let project = [
@@ -33,8 +35,12 @@ export default function Project() {
         },
     ]
   return (
-    <div className='  text-center  w-100 justify-center'>
-      <h1 className='flex justify-center text-white font-bold text-[4rem] pt-4 '>Projects</h1>
+    <div className=' mt-4 text-center  w-100 justify-center' id='project'>
+      <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }} 
+            className='flex justify-center text-white font-bold text-[4rem] pt-4 '>Projects</motion.h1>
       <div className='flex flex-wrap  m-9 justify-evenly gap-4 max-w-[90%]'>
         {
             project.map((project,index)=>(

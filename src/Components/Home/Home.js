@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SideBar from './SideBar';
 import MainContent from './MainContent';
 import { BiMenuAltLeft } from 'react-icons/bi'
@@ -9,6 +9,7 @@ import Resume from '../Resume/Resume';
 import Project from '../Project/Project';
 import ContactMe from '../Contact/ContactMe';
 
+
 export default function Home() {
 
   const dispatch = useDispatch()
@@ -16,6 +17,8 @@ export default function Home() {
     dispatch(openModal())
 
   };
+
+ 
 
   return (
     <div className='flex flex-row h-screen w-screen'>
@@ -31,6 +34,7 @@ export default function Home() {
           <Resume/>
           <Project/>
           <ContactMe/>
+        
         </div>
 
       </div>

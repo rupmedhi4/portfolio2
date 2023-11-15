@@ -1,21 +1,63 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 export default function Resume() {
     return (
         <>
-            <h1 className='text-center text-5xl font-bold pt-8 text-white'>Resume</h1>
+            <motion.h1
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className='text-center text-5xl font-bold pt-8 text-white'>Resume</motion.h1>
             <div className='flex flex-center mt-[3rem] flex-wrap md:justify-evenly  '>
-                <div className='flex flex-wrap justify-center  md:max-w-[50%]  md:justify-center  md:ml-[3rem] gap-5 rounded-full '>
-                    <img src="./css.png" alt="css image" className='rounded-full' />
-                    <img src="./firebase.png" alt="firebase image" className='rounded-full' />
-                    <img src="./js.png" alt="js image" className='rounded-full' />
-                    <img src="./next.jpg" alt="next image" className='rounded-full' />
-                    <img src="./react.png" alt="react image" className='rounded-full w-[13rem] md:w-[15rem]' />
-                    <img src="./tailwind.png" alt="tailwind image" className='rounded-full  w-[11rem] md:w-[14rem]' />
+                <div id='skills' className='flex flex-wrap justify-center  md:max-w-[50%]  md:justify-center  md:ml-[3rem] gap-5 rounded-full '>
+
+                    <motion.img src="./css.png" alt="css image" 
+                                className='rounded-full' initial={{ opacity:0, x:-50 }}
+                                whileInView={{ opacity:1, x:0 }}
+                                transition={{ duration: 3 }}  />
+
+                    <motion.img src="./firebase.png" alt="firebase image" 
+                                className='rounded-full' initial={{ opacity:0, x:-50 }}
+                                whileInView={{ opacity:1, x:0 }}
+                                transition={{ duration: 3 }} />
+
+                    <motion.img src="./js.png" alt="js image" 
+                                className='rounded-full' 
+                                initial={{ opacity:0, x:50 }}
+                                whileInView={{ opacity:1, x:0 }}
+                                transition={{ duration: 3 }}/>
+
+                    <motion.img src="./next.jpg" alt="next image" 
+                                className='rounded-full'
+                                initial={{ opacity:0, x:50 }}
+                                whileInView={{ opacity:1, x:0 }}
+                                transition={{ duration: 3 }} />
+
+                    <motion.img src="./react.png" alt="react image" 
+                                className='rounded-full w-[13rem] md:w-[15rem]'
+                                initial={{ opacity:0, x:-50 }}
+                                whileInView={{ opacity:1, x:0 }}
+                                transition={{ duration: 3 }}/>
+
+                    <motion.img src="./tailwind.png" alt="tailwind image" 
+                                className='rounded-full  w-[11rem] md:w-[14rem]' 
+                                initial={{ opacity:0, x:-50 }}
+                                whileInView={{ opacity:1, x:0 }}
+                                transition={{ duration: 3 }}/>
                 </div>
                 <div >
-                    <h2 className='md:ml-[8rem] mt-9 text-white text-3xl font-bold pl-9 md:pr-32 text-center '>My Skills</h2>
-                    <ul className='pt-8 font-bold text-white space-y-12 flex justify-center flex-col '>
+                    <motion.h2 
+                            initial={{ opacity: 0, y: -50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className='md:ml-[8rem] mt-9 text-white text-3xl font-bold pl-9 md:pr-32 text-center '>My Skills</motion.h2>
+
+                    <motion.ul 
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}                    
+                            className='pt-8 font-bold text-white space-y-12 flex justify-center flex-col '>
                         <li>
                             <div className='flex justify-evenly'>
                                 <span className='pl-6'>JavaScript</span>
@@ -83,17 +125,21 @@ export default function Resume() {
                             </div>
                         </li>
                         <li>
-                            
+
                             <div className='flex'>
                                 <div className=' w-[15rem] max-w-4rem  bg-white rounded-r-md'></div>
 
                             </div>
                         </li>
 
-                    </ul>
-                    <div className='text-center pt-5'>
-              <button className='bg-blue-700 rounded-full text-white  p-4 md:pl-16 md:pr-16 pr-20 pl-20 mb-4 font-bold text-center ml-4'>Download CV</button>
-          </div>
+                    </motion.ul>
+                    <motion.div
+                            initial={{ scale: 0}}
+                            whileInView={{ scale: 1 }}
+                            transition={{ duration: 1 }} 
+                            className='text-center pt-5'>
+                        <button className='bg-blue-700 rounded-full text-white  p-4 md:pl-16 md:pr-16 pr-20 pl-20 mb-4 font-bold text-center ml-4'>Download CV</button>
+                    </motion.div>
                 </div>
             </div>
         </>
