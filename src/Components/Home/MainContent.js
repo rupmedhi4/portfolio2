@@ -6,18 +6,17 @@ import { motion } from 'framer-motion';
 
 export default function MainContent() {
     useEffect(() => {
-        // Options for Typed.js
+   
         const options = {
-            strings: ['Hello 👋', 'Im Rup Medhi', 'Front End Developer|','React Js Developer|', 'UI Developer'],
+            strings: ['Hello 👋', 'Im Rup jyoti Medhi', 'Front End Developer|','React Js Developer|', 'UI Developer'],
             typeSpeed: 90,
             backSpeed: 90,
             loop: true,
         };
 
-        // Initialize Typed.js
+   
         const typed = new Typed('.typing-element', options);
 
-        // Clean up Typed instance on component unmount
         return () => {
             typed.destroy();
         };

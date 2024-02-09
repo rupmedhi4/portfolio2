@@ -138,7 +138,7 @@ export default function Resume() {
                             whileInView={{ scale: 1 }}
                             transition={{ duration: 1 }} 
                             className='text-center pt-5'>
-                        <button className='bg-blue-700 rounded-full text-white  p-4 md:pl-16 md:pr-16 pr-20 pl-20 mb-4 font-bold text-center ml-4'>Download CV</button>
+                        <a  href='https://drive.google.com/file/d/1nnfgMrTfeju2MTrsa7cB81o10nyDURL5/view?usp=sharing' target='_blank' className='bg-blue-700 rounded-full text-white  p-4 md:pl-16 md:pr-16 pr-20 pl-20 mb-4 font-bold text-center ml-4'>Download CV</a>
                     </motion.div>
                 </div>
             </div>

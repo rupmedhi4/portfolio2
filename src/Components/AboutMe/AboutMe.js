@@ -46,7 +46,7 @@ const AboutMe = () => {
           className='pl-4 w-[16rem] md:w-[28rem]'>
           <img src="./gif.gif" alt="" className='rounded-full rounded-t-md rounded-tr-full' />
           <div className='text-center pt-5'>
-            <button className='bg-blue-700 rounded-full text-white mb-4 p-4 pl-8 pr-8 font-bold'>Download CV</button>
+            <a  href='https://drive.google.com/file/d/1nnfgMrTfeju2MTrsa7cB81o10nyDURL5/view?usp=sharing' target='_blank' className='bg-blue-700 rounded-full text-white mb-4 p-4 pl-8 pr-8 font-bold'>Download CV</a>
           </div>
         </motion.div>
       </div>
