@@ -58,7 +58,7 @@ export default function SideBar() {
         className='flex justify-between gap-9 mt-9 text-xl cursor-pointer slide-in-blurred-bottom pb-9'>
         <li><a href="https://github.com/rupmedhi4" target='blank'><BsGithub /></a></li>
         <li> <a href="https://www.linkedin.com/in/rup-jyoti-medhi-516b62265/" target='blank'><BsLinkedin /></a> </li>
-        <li> <a href="https://www.instagram.com/rup_medhi24/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target='blank'> <GrInstagram /></a></li>
+       
         <li> <a href="#"><BsFacebook /></a> </li>
       </motion.ul>
 
