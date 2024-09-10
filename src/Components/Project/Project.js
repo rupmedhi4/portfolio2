@@ -10,15 +10,15 @@ export default function Project() {
             projectTitle : 'Ecommerce Project',
             description :"An Ecommerce application using React.js for front end Context API for storing data and Firebase for authentiction React Router for page navigation , GitHub for version control, Firebase for authentication. Developed a seamless cart management system that dynamically updates as users add or remove items",
             languages :[ 'React Js', 'firebase', 'Context api'],
-            targetUrl :"https://ecommerce-c6eo.vercel.app/",
+            targetUrl :"https://ecommerce-bay-nine-19.vercel.app/",
             github : 'https://github.com/rupmedhi4/ecommerce'
         },
         {
             image : 'expense_tracker.jpg',
-            projectTitle : 'Expense Tracker Project',
+            projectTitle : ' Expense Tracker',
             description :'Developed an expense tracker app in which user can add, delete and update expense React JS DEVELOPER Premium feature are also introduced to get dark mode and Download expenses Utilize React.js libraray for creating this website, Redux for state management, GitHub for version control , FireBase for storing data and authentication',
             languages :['React js ', 'Redux', 'Firebase',],
-            targetUrl :"https://complete-expense-tracker.vercel.app/",
+            targetUrl :"https://complete-expense-tracker-kohl.vercel.app/",
             github : "https://github.com/rupmedhi4/complete-expense-tracker-"
         },
         {
@@ -32,10 +32,13 @@ export default function Project() {
             
         },
         {
-            image : 'news.jpg',
-            projectTitle : 'News website',
-            description :'Developed a React.js news web application utilizing the News API for data retrieval through the Fetch API. Incorporated features such as a top loading bar to indicate loading progress and implemented infinite scroll for seamless article browsing. Ensured robust error handling to manage failed fetch requests, demonstrating proficiency in frontend development and a commitment to user-centric design and functionality.',
-            languages :['Infinite Scroll', 'news api ', 'React js','tailwindcss'],
+            image : 'chat.jpg',
+            projectTitle : ' Real-Time Chat Applicatio',
+            description :`Developed a real-time chat application using MongoDB,
+ Express.js, React.js, and Tailwind CSS  Implemented real-time communication features using
+ Socket.io to enable instant messaging between users`,
+            languages :['Express.js', 'MongoDB ', 'React js',' Socket.io'],
+            targetUrl :"https://full-stack-chat-app-1.onrender.com/",
             github : 'https://github.com/rupmedhi4/News-Fly-Project'
             
         },
@@ -43,8 +46,9 @@ export default function Project() {
             image : 'mailbox.jpg',
             projectTitle : 'Mail Box Client',
             description :'Developed a mailbox client website in which user can receive and send mail to another register user. User can view total unread messages Utilize React.js library for creating this application, Redux for state management, GitHub for version control, FireBase for storing data',
-            languages :['React js ', 'Redux', 'Firebase',],
-            github : 'https://github.com/rupmedhi4/MailBox'
+            languages :['React js ', 'Express.js,', 'MongoDB','Context Api',],
+            targetUrl :"https://full-stack-mailbox-3.onrender.com/",
+            github : 'https://github.com/rupmedhi4/FULL-STACK-MAILBOX-'
             
         },
     ]

@@ -59,7 +59,7 @@ export default function SideBar() {
         <li><a href="https://github.com/rupmedhi4" target='blank'><BsGithub /></a></li>
         <li> <a href="https://www.linkedin.com/in/rup-jyoti-medhi-516b62265/" target='blank'><BsLinkedin /></a> </li>
        
-        <li> <a href="#"><BsFacebook /></a> </li>
+        
       </motion.ul>
 
     </div>
